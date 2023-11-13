@@ -13,5 +13,6 @@ RUN apt-get update \
 COPY bash.bashrc /etc/bash.bashrc
 COPY dns_check.sh /root/dns_check.sh
 
+WORKDIR /root
 # bashrc config
 RUN echo "source /etc/bash.bashrc" >> /root/.bashrc

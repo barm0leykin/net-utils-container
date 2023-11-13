@@ -30,7 +30,7 @@ spec:
 
       containers:
       - name: net-utils
-        image: docker push barm0leykin/net-utils:1.0.1
+        image: barm0leykin/net-utils:1.0.1
         args: [/bin/sh, -c, 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 100; done']
         resources:
           requests:
